@@ -1,0 +1,9 @@
+# Exclude all exports.
+*.json
+*.sql
+*.xml
+
+# ... but include Test exports
+!Test.json
+!Test.sql
+!Test.xml

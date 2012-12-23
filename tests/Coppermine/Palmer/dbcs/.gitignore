@@ -1,0 +1,5 @@
+# Exclude all DBC files.
+*.dbc
+
+# ... but include Test DBC file
+!Test.dbc
