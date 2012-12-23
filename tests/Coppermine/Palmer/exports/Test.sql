@@ -1,0 +1,22 @@
+DROP TABLE IF EXISTS `my_table`;
+
+CREATE TABLE `my_table` (
+   `id` INT(11) SIGNED NOT NULL, 
+   `name` TEXT  NULL, 
+   `points` INT(11) SIGNED NOT NULL, 
+   `height` FLOAT NOT NULL, 
+   `friend1` INT(11) SIGNED NOT NULL, 
+   `friend2` INT(11) SIGNED NOT NULL, 
+  PRIMARY KEY (`id`) 
+);
+
+INSERT INTO `my_table` VALUES 
+ (1, 'John', 100, 1.7999999523163, 2, 0),
+  (2, 'Tim', 1337, 1.7999999523163, 1, 0),
+  (3, 'Pete', -10, 1.5499999523163, 1, 2),
+  (11, 'I am providing too many fields', 123, 1.2000000476837, 0, 0),
+  (12, 'I am providing too little fields', 0, 0, 0, 0),
+  (4, 'Helen', 100, 1.7999999523163, 0, 0),
+  (8, 'Frank', 1337, 1.7300000190735, 0, 0),
+  (10, 'Brad', -10, 1.5499999523163, 0, 0);
+
