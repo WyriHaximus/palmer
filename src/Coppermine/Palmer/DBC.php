@@ -15,18 +15,12 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * @package Coppermine
- * @subpackage Palmer
  */
 
 namespace Coppermine\Palmer;
 
 /**
  * Main interface class for reading / writing DBC files.
- *
- * @package    Coppermine
- * @subpackage Palmer
  */
 class DBC
 {

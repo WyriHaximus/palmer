@@ -16,17 +16,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-namespace Coppermine\Palmer;
+namespace Coppermine\Palmer\Map;
+
+use Coppermine\Palmer\Map\IniMap;
 
 /**
- * Test the Dbc class functionality
+ * Test functionality of the Ini file mapping class
  */
-class DBCTest extends \PHPUnit_Framework_TestCase
+class MapTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Test that a DBC file can be created.
+     * Test that a DBC map can be created.
      */
-    public function testDbcCanBeCreated()
+    public function testMapCanBeCreated()
+    {
+        $dbcMap = new IniMap();
+
+        $dbcMap->addField('id', 0, 1);
+
+        $this->markTestIncomplete(
+            'This test has not been implemented yet.'
+        );
+    }
+
+    /**
+     * Test that a DBC map can be created from DBC file.
+     */
+    public function testMapCanBeCreatedFromFile()
     {
         $this->markTestIncomplete(
             'This test has not been implemented yet.'
@@ -34,19 +50,9 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test that a DBC file can be created from map.
+     * Test if a DBC file can be read using a map.
      */
-    public function testDBcCanBeCreatedFromMap()
-    {
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * Test if a DBC file can be edited.
-     */
-    public function testDbcCanBeEdited()
+    public function testMapCanBeEdited()
     {
         $this->markTestIncomplete(
             'This test has not been implemented yet.'

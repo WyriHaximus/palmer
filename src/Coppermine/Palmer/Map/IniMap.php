@@ -16,40 +16,58 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-namespace Coppermine\Palmer;
+namespace Coppermine\Palmer\Map;
 
 /**
- * Test the Dbc class functionality
+ * Mapping of fields for a DBC file.
  */
-class DBCTest extends \PHPUnit_Framework_TestCase
+class IniMap extends AbstractMap
 {
     /**
-     * Test that a DBC file can be created.
+     * Instantiate and set up mapping
      */
-    public function testDbcCanBeCreated()
+    public function __construct()
     {
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        // TODO: Implement __construct() method.
     }
 
     /**
-     * Test that a DBC file can be created from map.
+     * Destruct mapping
      */
-    public function testDBcCanBeCreatedFromMap()
+    public function __destruct()
     {
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        $this->_fields = null;
     }
 
     /**
-     * Test if a DBC file can be edited.
+     * {@inheritdoc}
      */
-    public function testDbcCanBeEdited()
+    public function addField($field, $type, $count)
     {
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        // TODO: Implement addField() method.
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isField($field)
+    {
+        // TODO: Implement isField() method.
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function removeField($field)
+    {
+        // TODO: Implement removeField() method.
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFieldOffset($field)
+    {
+        // TODO: Implement getFieldOffset() method.
     }
 }

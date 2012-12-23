@@ -1,5 +1,0 @@
-# Exclude all maps.
-*.ini
-
-# ... but include Test map
-!Test.ini

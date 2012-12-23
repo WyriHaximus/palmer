@@ -15,17 +15,11 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * @package Coppermine
- * @subpackage Palmer
  */
 namespace Coppermine\Palmer;
 
 /**
  * Represents a single record in a DBC file.
- *
- * @package    Coppermine
- * @subpackage Palmer
  */
 class Record
 {
