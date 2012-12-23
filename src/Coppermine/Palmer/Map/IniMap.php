@@ -18,74 +18,20 @@
  */
 namespace Coppermine\Palmer\Map;
 
-use Coppermine\Palmer\DBC;
-
 /**
  * Mapping of fields for a DBC file.
  */
 class IniMap extends AbstractMap
 {
     /**
-     * Instantiate and set up mapping
-     */
-    public function __construct()
-    {
-        // TODO: Implement __construct() method.
-    }
-
-    /**
-     * Destruct mapping
-     */
-    public function __destruct()
-    {
-        $this->_fields = null;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function addField($field, $type, $count)
-    {
-        // TODO: Implement addField() method.
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function isField($field)
-    {
-        // TODO: Implement isField() method.
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function removeField($field)
-    {
-        // TODO: Implement removeField() method.
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getFieldOffset($field)
-    {
-        // TODO: Implement getFieldOffset() method.
-    }
-
-    /**
-     * {@inheritdoc}
+     * Creates a map from a given INI file
+     *
+     * Returns the created map
+     *
+     * @param string $file name of the file to create the map from
      */
     public function fromFile($file)
     {
         // TODO: Implement fromFile() method.
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function fromDbc(DBC $dbc, $attach = true)
-    {
-        // TODO: Implement fromDbc() method.
     }
 }

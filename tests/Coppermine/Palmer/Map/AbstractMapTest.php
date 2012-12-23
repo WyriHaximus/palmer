@@ -18,42 +18,18 @@
  */
 namespace Coppermine\Palmer\Map;
 
-use Coppermine\Palmer\Map\IniMap;
-
 /**
  * Test functionality of the Ini file mapping class
  */
-class MapTest extends \PHPUnit_Framework_TestCase
+class AbstractMapTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test that a DBC map can be created.
      */
     public function testMapCanBeCreated()
     {
-        $dbcMap = new IniMap();
 
-        $dbcMap->addField('id', 0, 1);
-
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * Test that a DBC map can be created from DBC file.
-     */
-    public function testMapCanBeCreatedFromFile()
-    {
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * Test if a DBC file can be read using a map.
-     */
-    public function testMapCanBeEdited()
-    {
+        // $map = $this->getMockForAbstractClass('Coppermine\Palmer\Map\AbstractMap');
         $this->markTestIncomplete(
             'This test has not been implemented yet.'
         );

@@ -6,6 +6,7 @@
          processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="true"
+         bootstrap="bootstrap.php"
         >
     <testsuites>
         <testsuite name="Coppermine/Palmer test suite">
