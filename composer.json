@@ -11,17 +11,11 @@
             "email": "daniel@kogitoapp.com"
         }
     ],
-    "support": [
-        {
-            "source": "https://github.com/the-coppermine/palmer"
-        }
-    ],
     "autoload": {
         "psr-0": { "": "src/" }
     },
     "require": {
-        "php": ">=5.3.3",
-        "monolog/monolog": "1.2.*@stable"
+        "php": ">=5.3.3"
     },
     "minimum-stability": "stable"
 }
