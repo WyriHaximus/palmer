@@ -18,6 +18,8 @@
  */
 namespace Coppermine\Palmer\Map;
 
+use Coppermine\Palmer\DBC;
+
 /**
  * Mapping of fields for a DBC file.
  */
@@ -69,5 +71,21 @@ class IniMap extends AbstractMap
     public function getFieldOffset($field)
     {
         // TODO: Implement getFieldOffset() method.
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function fromFile($file)
+    {
+        // TODO: Implement fromFile() method.
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function fromDbc(DBC $dbc, $attach = true)
+    {
+        // TODO: Implement fromDbc() method.
     }
 }

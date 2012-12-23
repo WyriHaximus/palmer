@@ -21,6 +21,8 @@ namespace Coppermine\Palmer\Map;
 /**
  * Interface that all Palmer Maps must implement
  */
+use Coppermine\Palmer\DBC;
+
 interface MapInterface
 {
     /**
@@ -68,11 +70,26 @@ interface MapInterface
     public function setFields(array $fields);
 
     /**
-     * Returns the actual offset for given field
+     * Returns the offset for given field
      *
      * @param string $field
      *
      * @return integer
      */
     public function getFieldOffset($field);
+
+    /**
+     * Creates a map from a given file path
+     *
+     * Returns the created map
+     *
+     * @param string $file name of the file to create the map from
+     */
+    public function fromFile($file);
+
+    /**
+     * @param \Coppermine\Palmer\DBC $dbc    The DBc file to create the map from
+     * @param boolean                $attach Attach a DBC map to the file
+     */
+    public function fromDbc(DBC $dbc, $attach = true);
 }

@@ -24,5 +24,33 @@ namespace Coppermine\Palmer;
  */
 class DBC
 {
+    /**
+     * Denotes an unsigned integer field type
+     */
+    const UINT = 'L';
 
+    /**
+     * Denotes a signed integer field type
+     */
+    const INT = 'l';
+
+    /**
+     * Denotes a float field type
+     */
+    const FLOAT = 'f';
+
+    /**
+     * Denotes a string field type
+     */
+    const STRING = 's';
+
+    /**
+     * Denotes a localized string field type
+     */
+    const STRING_LOC = 'sl';
+
+    /**
+     * Number of localization string fields
+     */
+    const LOCALIZATION = 8;
 }
