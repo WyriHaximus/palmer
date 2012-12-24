@@ -18,11 +18,11 @@
  */
 namespace Coppermine\Palmer\Map;
 
+use Coppermine\Palmer\DBC;
+
 /**
  * Interface that all Palmer Maps must implement
  */
-use Coppermine\Palmer\DBC;
-
 interface MapInterface
 {
     /**

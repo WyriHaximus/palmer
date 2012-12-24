@@ -39,5 +39,6 @@ Thumbs.db
 # Cache and log files
 
 # Generated files, vendor libraries
+/docs
 /vendor
 /composer.lock

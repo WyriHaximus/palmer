@@ -19,7 +19,7 @@
 namespace Coppermine\Palmer\Map;
 
 /**
- * Mapping of fields for a DBC file.
+ * Map DBC fields using an INI file
  */
 class IniMap extends AbstractMap
 {
@@ -29,9 +29,15 @@ class IniMap extends AbstractMap
      * Returns the created map
      *
      * @param string $file name of the file to create the map from
+     *
+     * @return \Coppermine\Palmer\Map\IniMap|boolean
      */
     public function fromFile($file)
     {
-        // TODO: Implement fromFile() method.
+        if (is_readable($file)) {
+            return new self(parse_ini_file($file));
+        }
+
+        return false;
     }
 }
