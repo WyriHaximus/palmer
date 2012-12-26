@@ -20,6 +20,8 @@ namespace Coppermine\Palmer\Map;
 
 /**
  * Map DBC fields using an INI file
+ *
+ * @TODO Define constants to map strings from Ini files to field masks
  */
 class IniMap extends AbstractMap
 {

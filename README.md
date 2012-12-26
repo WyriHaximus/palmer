@@ -7,6 +7,15 @@ archives of the actual game client.
 
 **NOTICE**: this repository used for developing [The Coppermine][100], and is maintained on [github][111].
 
+
+Contributing
+------------
+**Palmer** is built test-driven, thus to contribute you need a working installation of PHP, and PHPUnit. Tests can be
+executed from within the `tests` directory by running
+
+    phpunit
+
+
 License
 -------
 **Palmer** is released under the GPL v3.  The file (`LICENSE.md`) **must** be a part of any redistributable packages

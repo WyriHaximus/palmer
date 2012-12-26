@@ -21,27 +21,6 @@ namespace Coppermine\Palmer\Map;
 use Coppermine\Palmer\DBC;
 
 /**
- * Mapping for unsigned integer data type
- */
-define('DBC_UINT', AbstractMap::UINT_MASK);
-/**
- * Mapping for integer data type
- */
-define('DBC_INT', AbstractMap::INT_MASK);
-/**
- * Mapping for float data type
- */
-define('DBC_FLOAT', AbstractMap::FLOAT_MASK);
-/**
- * Mapping for string data type
- */
-define('DBC_STRING', AbstractMap::STRING_MASK);
-/**
- * Mapping for localized string data type
- */
-define('DBC_STRING_LOC', AbstractMap::STRING_LOC_MASK);
-
-/**
  * Base map class providing the map structure
  */
 abstract class AbstractMap implements MapInterface

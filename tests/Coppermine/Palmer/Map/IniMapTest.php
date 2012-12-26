@@ -21,7 +21,7 @@ namespace Coppermine\Palmer\Map;
 /**
  * Test functionality of the Ini file mapping class
  */
-class AbstractMapTest extends \PHPUnit_Framework_TestCase
+class IniMapTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test that a DBC map can be created.
@@ -29,9 +29,8 @@ class AbstractMapTest extends \PHPUnit_Framework_TestCase
     public function testMapCanBeCreated()
     {
 
-        // $map = $this->getMockForAbstractClass('Coppermine\Palmer\Map\AbstractMap');
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        $iniMap = new IniMap();
+        $iniMap->fromFile('Sample.ini');
+
     }
 }
