@@ -46,3 +46,5 @@ Thumbs.db
 /docs
 /vendor
 /composer.lock
+/tests/coverage.xml
+/tests/report/
