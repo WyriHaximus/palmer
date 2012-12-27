@@ -25,6 +25,7 @@ namespace Coppermine\Palmer\Map;
  */
 class IniMap extends AbstractMap
 {
+
     /**
      * Creates a map from a given INI file
      *
@@ -37,6 +38,8 @@ class IniMap extends AbstractMap
     public function fromFile($file)
     {
         if (is_readable($file)) {
+            print_r(parse_ini_file($file, false, INI_SCANNER_RAW));
+
             return new self(parse_ini_file($file));
         }
 

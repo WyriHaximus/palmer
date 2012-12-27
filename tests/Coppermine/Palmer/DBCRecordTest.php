@@ -19,12 +19,12 @@
 namespace Coppermine\Palmer;
 
 /**
- * Test the DBC class functionality
+ * Test the DBCRecord class functionality
  */
-class DBCTest extends \PHPUnit_Framework_TestCase
+class DBCRecordTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var DBC
+     * @var DBCRecord
      */
     protected $object;
 
@@ -34,7 +34,7 @@ class DBCTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        // $this->object = new DBC;
+        // $this->object = new DBCRecord;
     }
 
     /**
@@ -46,7 +46,7 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::__destruct
+     * @covers Coppermine\Palmer\DBCRecord::__destruct
      * @todo   Implement test__destruct().
      */
     public function test__destruct()
@@ -58,10 +58,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getFieldCount
-     * @todo   Implement testGetFieldCount().
+     * @covers Coppermine\Palmer\DBCRecord::getId
+     * @todo   Implement testGetId().
      */
-    public function testGetFieldCount()
+    public function testGetId()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -70,10 +70,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getHandle
-     * @todo   Implement testGetHandle().
+     * @covers Coppermine\Palmer\DBCRecord::getPosition
+     * @todo   Implement testGetPosition().
      */
-    public function testGetHandle()
+    public function testGetPosition()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -82,10 +82,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getIterator
-     * @todo   Implement testGetIterator().
+     * @covers Coppermine\Palmer\DBCRecord::dump
+     * @todo   Implement testDump().
      */
-    public function testGetIterator()
+    public function testDump()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -94,10 +94,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getMap
-     * @todo   Implement testGetMap().
+     * @covers Coppermine\Palmer\DBCRecord::asArray
+     * @todo   Implement testAsArray().
      */
-    public function testGetMap()
+    public function testAsArray()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -106,10 +106,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getPath
-     * @todo   Implement testGetPath().
+     * @covers Coppermine\Palmer\DBCRecord::extract
+     * @todo   Implement testExtract().
      */
-    public function testGetPath()
+    public function testExtract()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -118,10 +118,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getRecordCount
-     * @todo   Implement testGetRecordCount().
+     * @covers Coppermine\Palmer\DBCRecord::get
+     * @todo   Implement testGet().
      */
-    public function testGetRecordCount()
+    public function testGet()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -130,10 +130,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getRecordSize
-     * @todo   Implement testGetRecordSize().
+     * @covers Coppermine\Palmer\DBCRecord::set
+     * @todo   Implement testSet().
      */
-    public function testGetRecordSize()
+    public function testSet()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -142,10 +142,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getStringBlock
-     * @todo   Implement testGetStringBlock().
+     * @covers Coppermine\Palmer\DBCRecord::getUInt
+     * @todo   Implement testGetUInt().
      */
-    public function testGetStringBlock()
+    public function testGetUInt()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -154,10 +154,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getRecord
-     * @todo   Implement testGetRecord().
+     * @covers Coppermine\Palmer\DBCRecord::setUInt
+     * @todo   Implement testSetUInt().
      */
-    public function testGetRecord()
+    public function testSetUInt()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -166,10 +166,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::getRecordByID
-     * @todo   Implement testGetRecordByID().
+     * @covers Coppermine\Palmer\DBCRecord::getInt
+     * @todo   Implement testGetInt().
      */
-    public function testGetRecordByID()
+    public function testGetInt()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -178,10 +178,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::hasRecord
-     * @todo   Implement testHasRecord().
+     * @covers Coppermine\Palmer\DBCRecord::setInt
+     * @todo   Implement testSetInt().
      */
-    public function testHasRecord()
+    public function testSetInt()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -190,10 +190,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::hasRecordByID
-     * @todo   Implement testHasRecordByID().
+     * @covers Coppermine\Palmer\DBCRecord::getFloat
+     * @todo   Implement testGetFloat().
      */
-    public function testHasRecordByID()
+    public function testGetFloat()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -202,10 +202,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::hasField
-     * @todo   Implement testHasField().
+     * @covers Coppermine\Palmer\DBCRecord::setFloat
+     * @todo   Implement testSetFloat().
      */
-    public function testHasField()
+    public function testSetFloat()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(
@@ -214,79 +214,7 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::isWritable
-     * @todo   Implement testIsWritable().
-     */
-    public function testIsWritable()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::attach
-     * @todo   Implement testAttach().
-     */
-    public function testAttach()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::finalize
-     * @todo   Implement testFinalize().
-     */
-    public function testFinalize()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::index
-     * @todo   Implement testIndex().
-     */
-    public function testIndex()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::create
-     * @todo   Implement testCreate().
-     */
-    public function testCreate()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::add
-     * @todo   Implement testAdd().
-     */
-    public function testAdd()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers Coppermine\Palmer\DBC::getString
+     * @covers Coppermine\Palmer\DBCRecord::getString
      * @todo   Implement testGetString().
      */
     public function testGetString()
@@ -298,10 +226,10 @@ class DBCTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Coppermine\Palmer\DBC::addString
-     * @todo   Implement testAddString().
+     * @covers Coppermine\Palmer\DBCRecord::setString
+     * @todo   Implement testSetString().
      */
-    public function testAddString()
+    public function testSetString()
     {
         // Remove the following lines when you implement this test.
         $this->markTestIncomplete(

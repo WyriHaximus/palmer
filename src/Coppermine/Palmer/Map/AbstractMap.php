@@ -154,7 +154,7 @@ abstract class AbstractMap implements MapInterface
      */
     public static function isProbableFloat($bits)
     {
-        $sign = ($bits & 0x80000000) != 0;
+        // $sign = ($bits & 0x80000000) != 0;
         $exp = (($bits & 0x7F800000) >> 23) - 127;
         $mant = $bits & 0x007FFFFF;
 

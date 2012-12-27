@@ -13,6 +13,10 @@
 /.buildpath
 /.externalToolBuilders
 
+# Sublime Text 2 - project files
+/*.sublime-project
+/*.sublime-workspace
+
 # Numerous always-ignore extensions
 *.diff
 *.err
