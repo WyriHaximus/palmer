@@ -209,13 +209,13 @@ class DBCRecord
             return null;
         }
 
-        $string = null;
-        if ($string = ($type === DBC::STRING || $type === DBC::STRING_LOC)) {
+        $isString = false;
+        if ($isString = ($type === DBC::STRING || $type === DBC::STRING_LOC)) {
             $type = DBC::UINT;
         }
         list(, $value) = unpack($type, substr($this->_data, $offset, DBC::FIELD_SIZE));
 
-        if ($string) {
+        if ($isString) {
             $value = $this->_dbc->getString($value);
         }
 
@@ -253,7 +253,8 @@ class DBCRecord
 
         $handle = $this->_dbc->getHandle();
 
-        if ($string = ($type === DBC::STRING || $type === DBC::STRING_LOC)) {
+        $isString = null;
+        if ($isString = ($type === DBC::STRING || $type === DBC::STRING_LOC)) {
             $value = $this->_dbc->addString($value);
             $type = DBC::UINT;
         }

@@ -24,13 +24,48 @@ namespace Coppermine\Palmer\Map;
 class IniMapTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Test that a DBC map can be created.
+     * @var IniMap
      */
-    public function testMapCanBeCreated()
+    protected $object;
+
+    /**
+     * Sets up the fixture, for example, opens a network connection.
+     * This method is called before a test is executed.
+     */
+    protected function setUp()
     {
+        // $this->object = new IniMap;
+    }
 
-        $iniMap = new IniMap();
-        $iniMap->fromFile('Sample.ini');
+    /**
+     * Tears down the fixture, for example, closes a network connection.
+     * This method is called after a test is executed.
+     */
+    protected function tearDown()
+    {
+    }
 
+    /**
+     * @covers Coppermine\Palmer\Map\IniMap::__destruct
+     * @todo   Implement test__destruct().
+     */
+    public function test__destruct()
+    {
+        // Remove the following lines when you implement this test.
+        $this->markTestIncomplete(
+            'This test has not been implemented yet.'
+        );
+    }
+
+    /**
+     * @covers Coppermine\Palmer\Map\IniMap::fromFile
+     * @todo   Implement testFromFile().
+     */
+    public function testFromFile()
+    {
+        // Remove the following lines when you implement this test.
+        $this->markTestIncomplete(
+            'This test has not been implemented yet.'
+        );
     }
 }
